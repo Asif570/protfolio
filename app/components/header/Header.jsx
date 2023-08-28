@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Header = () => {
   return (
-<div className="navbar bg-transparent fixed top-0 h-16  border-b border-white shadow-md shadow-white">
+<div className="navbar bg-[#1c2068dc] fixed top-0 h-16  border-b border-white  shadow-sm shadow-white">
  
   <div className="navbar-center hidden lg:flex container mx-auto ">
     <ul className="menu menu-horizontal px-1">
