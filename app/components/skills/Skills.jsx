@@ -82,7 +82,7 @@ const data = {
 
   return (
     <div id='skils' className='bg-[#161B58] min-h-[600px] h-auto'>
-<div className="container mx-auto py-20 flex items-center flex-col md:flex-row gap-5 justify-center" >
+<div className="container px-5 mx-auto py-20 flex items-center flex-col md:flex-row gap-5 justify-center" >
 {/* text  */}
 <div className="max-w-[600px] flex-1 border-r-4 border-[#E5E5E5] pr-6">
 <div className="text-3xl font-bold text-white mb-5">Skills.</div>
@@ -99,8 +99,8 @@ const data = {
 </div>
 <div className="tab-box   mt-3 grid grid-cols-3 md:grid-cols-4 px-2 py-4 gap-5 border-2 border-[#000C24] min-h-[100px] rounded-md">
 {
-  data[activTab]?.map(item=>{
-    return <div className='h-[120px] w-[100px]'>
+  data[activTab]?.map((item,i)=>{
+    return <div key={i} className='h-[120px] w-[100px]'>
    <img src={item.image} alt="img"  className='w-[100px] h-[100px]'/>
    <div className="text-lg">{item.title}</div>
     </div>
